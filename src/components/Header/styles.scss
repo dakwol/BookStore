@@ -1,0 +1,28 @@
+@use "../../scss/" as *;
+
+.header{
+    background-color: $white;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 138rem;
+
+
+    .navContainer{
+        display: flex;
+        align-items: center;
+        gap: 16rem;
+
+        .buttonNav{
+            padding: 14rem;
+            background-color: $gray-200;
+
+            object{
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use "../../scss/" as *;
+
+.infoBook{
+    display: flex;
+    gap: 80rem;
+
+    .imageBook{
+        padding: 60rem;
+        background-color: $gray-100;
+        width: 420rem;
+        height: 570rem;
+        object-fit: cover;
+        border-radius: 4rem;
+    }
+
+    .containerInfoBook{
+        .nameInfoBook{
+            @include fnt(40, 56, $weight: 600)
+        }
+        .subtitleInfoBook{
+            @include fnt(30, 56, $weight: 600);
+            margin-top: 60rem;
+        }
+        .authorInfoBook{
+            @include fnt(32, 40, $weight: 500, $color: $gray-400);
+         
+        }
+        .textInfoBook{
+            @include fnt(20, 30, $weight: 400, $color: $gray-400)
+        }
+    }
+}

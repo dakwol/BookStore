@@ -1,0 +1,60 @@
+@use "../../scss/" as *;
+
+.containerCard{
+    display: flex;
+    gap: 20rem;
+    background-color: $gray-100;
+    padding: 10rem;
+    border-radius: 4rem;
+    border: 1rem solid $gray-200;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+    &.column{
+        align-items: center;
+        flex-direction: column;
+        padding: 20rem 0;
+    }
+
+    &:hover{
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .imageCard{
+        width: 120rem;
+        height: 180rem;
+        object-fit: cover;
+
+        &.column{
+            width: 200rem;
+            height: 300rem;
+        }
+    }
+
+    .containerCardInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16rem 0;
+
+        &.column{
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0rem 16rem;
+
+        }
+
+        .cardName{
+            @include fnt(20, 24, $weight: 600)
+        }
+        .cardAuthor{
+            @include fnt(16, 20, $weight: 500, $color: $gray-400, $font: $fontText)
+        }
+
+        .cardPrice{
+            @include fnt(24, 32, $weight: 600, $color: #6251DD, $font: $fontText)
+        }
+    }
+}

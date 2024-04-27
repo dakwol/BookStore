@@ -1,0 +1,62 @@
+@use "../../scss/" as *;
+
+.containerModalCreate{
+    max-width: 300rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+
+    .modalTitle{
+        @include fnt(24, $weight:700)
+    }
+}
+
+.adminContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24rem;
+
+    .titleAdmin{
+        @include fnt(24, $weight:700)
+    }
+ 
+}
+
+.lineCardBook{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    border-top: 1rem solid $gray-300;
+    gap: 12rem;
+    padding: 12rem 0;
+    align-items: center;
+
+    p{
+        @include fnt(18, 32)
+    }
+
+    .lineImg{
+        width: 120rem;
+        height: 200rem;
+        object-fit: cover;
+    }
+
+    .buttonAdminContainer{
+        display: flex;
+        gap: 12rem;
+        align-items: center;
+        justify-content: flex-end;
+
+        .adminButton{
+            max-width: fit-content;
+            padding: 12rem;
+            background-color: inherit;
+            object{
+                margin: 0;
+            }
+        }
+    }
+
+   
+}

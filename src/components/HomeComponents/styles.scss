@@ -1,0 +1,29 @@
+@use "../../scss/" as *;
+
+.categoryContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+
+    .categoryNameContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .categoryTitle{
+            @include fnt(32, 46, $weight: 600);
+        }
+        .categoryLink{
+            @include fnt(18, 24, $weight: 500, $color: #EF6B4A);
+        }
+    }
+}
+
+.containerArrayCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20rem;
+    flex-wrap: wrap;
+    margin-bottom: 60rem;
+
+}
