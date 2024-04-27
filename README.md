@@ -10,6 +10,7 @@ dotnet ef migrations add --project DataAccess Initial
 dotnet ef database update --project DataAccess --startup-project PMSoftAPI
 
 dotnet run
+
 Сервер запущен!
 
 ## Запуск front-end
