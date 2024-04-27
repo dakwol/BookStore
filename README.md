@@ -16,13 +16,19 @@ dotnet run
 ## Запуск front-end
 
 Установка зависимостей npm install или npm install (--force)
+
 npm start
+
 Готово!
 
 Аккаунт админа для входа на сайт
+
 admin@mail.com
+
 123
 
 Аккаунт готового обычного пользователя
+
 user@mail.com
+
 123
