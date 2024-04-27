@@ -4,6 +4,7 @@
 
 Скачиваем dotnet
 В проекте переходим в папку backend и выполняем команды
+
 dotnet ef migrations add --project DataAccess Initial
 
 dotnet ef database update --project DataAccess --startup-project PMSoftAPI
