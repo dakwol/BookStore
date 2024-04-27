@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMSoftAPI", "PMSoftAPI\PMSoftAPI.csproj", "{15A92F3A-5D91-445C-9E22-DE530BF3B843}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD17F3B4-5C60-4869-93C1-4D55AD401AF8}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{274028DF-F7E8-4DBF-8DC1-DC5A3EA51C1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{979BFA23-0E49-40AD-BDEF-BECD778D334A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15A92F3A-5D91-445C-9E22-DE530BF3B843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A92F3A-5D91-445C-9E22-DE530BF3B843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A92F3A-5D91-445C-9E22-DE530BF3B843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A92F3A-5D91-445C-9E22-DE530BF3B843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274028DF-F7E8-4DBF-8DC1-DC5A3EA51C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274028DF-F7E8-4DBF-8DC1-DC5A3EA51C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274028DF-F7E8-4DBF-8DC1-DC5A3EA51C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274028DF-F7E8-4DBF-8DC1-DC5A3EA51C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979BFA23-0E49-40AD-BDEF-BECD778D334A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979BFA23-0E49-40AD-BDEF-BECD778D334A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979BFA23-0E49-40AD-BDEF-BECD778D334A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979BFA23-0E49-40AD-BDEF-BECD778D334A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

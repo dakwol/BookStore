@@ -1,0 +1,221 @@
+@PMSoftAPI_HostAddress = http://localhost:5011
+
+# Создание нового пользователя
+POST {{PMSoftAPI_HostAddress}}/users/
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "passwordHash": "password123"
+}
+
+###
+
+# Получение информации о конкретном пользователе по ID
+GET {{PMSoftAPI_HostAddress}}/users/1
+Accept: application/json
+
+###
+
+# Получение всех пользователей
+GET {{PMSoftAPI_HostAddress}}/users
+Accept: application/json
+
+###
+
+# Удаление пользователя
+DELETE {{PMSoftAPI_HostAddress}}/users/1
+
+###
+
+# Создание новой страны
+POST {{PMSoftAPI_HostAddress}}/countries/
+Content-Type: application/json
+
+{
+  "name": "Example Country"
+}
+
+###
+
+# Получение информации о конкретной стране по ID
+GET {{PMSoftAPI_HostAddress}}/countries/1
+Accept: application/json
+
+###
+
+# Получение всех стран
+GET {{PMSoftAPI_HostAddress}}/countries
+Accept: application/json
+
+###
+
+# Обновление информации о стране
+PUT {{PMSoftAPI_HostAddress}}/countries/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Country Name"
+}
+
+###
+
+# Удаление страны
+DELETE {{PMSoftAPI_HostAddress}}/countries/1
+
+###
+
+# Создание нового автора
+POST {{PMSoftAPI_HostAddress}}/authors/
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "countryId": 1
+}
+
+###
+
+# Получение информации о конкретном авторе по ID
+GET {{PMSoftAPI_HostAddress}}/authors/1
+Accept: application/json
+
+###
+
+# Получение всех авторов
+GET {{PMSoftAPI_HostAddress}}/authors
+Accept: application/json
+
+###
+
+# Удаление автора
+DELETE {{PMSoftAPI_HostAddress}}/authors/1
+
+###
+
+# Создание нового жанра
+POST {{PMSoftAPI_HostAddress}}/genres/
+Content-Type: application/json
+
+{
+  "name": "Example Genre"
+}
+
+###
+
+# Получение информации о конкретном жанре по ID
+GET {{PMSoftAPI_HostAddress}}/genres/1
+Accept: application/json
+
+###
+
+# Получение всех жанров
+GET {{PMSoftAPI_HostAddress}}/genres
+Accept: application/json
+
+###
+
+# Обновление информации о жанре
+PUT {{PMSoftAPI_HostAddress}}/genres/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Genre Name"
+}
+
+###
+
+# Удаление жанра
+DELETE {{PMSoftAPI_HostAddress}}/genres/1
+
+###
+
+# Создание нового издателя
+POST {{PMSoftAPI_HostAddress}}/publishers/
+Content-Type: application/json
+
+{
+  "name": "Example Publisher"
+}
+
+###
+
+# Получение информации о конкретном издателе по ID
+GET {{PMSoftAPI_HostAddress}}/publishers/1
+Accept: application/json
+
+###
+
+# Получение всех издателей
+GET {{PMSoftAPI_HostAddress}}/publishers
+Accept: application/json
+
+###
+
+# Обновление информации об издателе
+PUT {{PMSoftAPI_HostAddress}}/publishers/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Publisher Name"
+}
+
+###
+
+# Удаление издателя
+DELETE {{PMSoftAPI_HostAddress}}/publishers/1
+
+
+###
+
+# Создание новой книги
+POST {{PMSoftAPI_HostAddress}}/books/
+Content-Type: application/json
+
+{
+  "title": "Example Book",
+  "year": 2024,
+  "description": "This is an example book.",
+  "genreId": 1,
+  "authorId": 1,
+  "publisherId": 1,
+  "rating": 5
+}
+
+###
+
+# Получение информации о конкретной книге по ID
+GET {{PMSoftAPI_HostAddress}}/books/1
+Accept: application/json
+
+###
+
+# Получение всех книг
+GET {{PMSoftAPI_HostAddress}}/books
+Accept: application/json
+
+###
+
+# Обновление информации о книге
+PUT {{PMSoftAPI_HostAddress}}/books/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Book Title",
+  "year": 2025,
+  "description": "This is an updated description of the book.",
+  "genreId": 1,
+  "authorId": 1,
+  "publisherId": 1,
+  "rating": 4
+}
+
+###
+
+# Удаление книги
+DELETE {{PMSoftAPI_HostAddress}}/books/1

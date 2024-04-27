@@ -1,0 +1,6 @@
+﻿services:
+  pmsoftapi:
+    image: pmsoftapi
+    build:
+      context: .
+      dockerfile: PMSoftAPI/Dockerfile
